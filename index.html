@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-page-node-id="QZX0PwwjVsOCzWtFB01AYv">
+<head data-page-node-id="LbwyXMPHu0DNC8DMFTPRL7">
+  <meta charset="UTF-8" data-page-node-id="6mD9ekU6DI0LjI3GgyvClh">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" data-page-node-id="Cmvhf4gqAo1leObz3u6SYd">
+  <title>校园机会雷达 · 发现适合你的活动与机会</title>
+  <link rel="stylesheet" href="styles.css" data-page-node-id="rs41WhFrOZfiMKaCw6ZkF4">
+</head>
+<body data-page-node-id="RlUwhu1kaAIWDL4oN3E7EX">
+  <header class="site-header" data-page-node-id="yJYMBo0GFjBKv2p8EYRYvW">
+    <div class="header-inner" data-page-node-id="LPH1WzNVJnsRqOsVs6rNE7">
+      <div class="brand" data-page-node-id="3Epv8j0yymu2WYjV8fOVVk">
+        <div class="brand-logo" data-page-node-id="EFRmzOSBcVGBTmmFCIGm0r">📡</div>
+        <div data-page-node-id="fLO46x0eu9VKgYmzThhXAg">
+          <h1 data-page-node-id="kosyXq1lADMvf243UpjLxt">校园机会雷达</h1>
+          <p class="brand-sub" data-page-node-id="pDKMZbxUsfHzBz4m3OZvBy">比赛 · 讲座 · 招募 · 志愿 · 学习，一站发现，重点照顾新生</p>
+        </div>
+      </div>
+      <div class="header-right" data-page-node-id="HMyWnjCtBvNWQqAzq2FKEf">
+        <div class="date-badge" id="dateBadge" data-page-node-id="vUnl8T7qwMQsLm13o908Gh"></div>
+        <button class="btn btn-ghost" id="favToggle" data-page-node-id="bC8mcxUqJ9vBQtKo16zd2b">⭐ 我的收藏 <span id="favCount" class="fav-count" data-page-node-id="6EGdkwsrAFIQTsC6YAaB0m">0</span></button>
+        <button class="btn btn-primary" id="publishBtn" data-page-node-id="HdB0rC0E4GLdu7eOALCxjz">＋ 发布活动</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="alert-strip" id="alertStrip" data-page-node-id="LydD1NUUuTCr4aPF1GtdHS"></section>
+
+  <main class="container" data-page-node-id="KGau5gSLOjZ0Qq0eITjFLp">
+    <div class="toolbar" data-page-node-id="rU8FrTfTWNPEhH5lkpNMRI">
+      <input type="search" id="searchInput" class="search-input" placeholder="搜索活动、关键词，如：零基础 / AI / 羽毛球…" data-page-node-id="K9DZPT7oYWedYCmH0CRDy4">
+      <div class="chips" id="typeChips" data-page-node-id="NbYFzIzmciSKUcwWtphVFx"></div>
+      <div class="toolbar-row" data-page-node-id="CAF7g4nlHBkCTwj9WZsTRq">
+        <div class="toggles" data-page-node-id="jZtEaK7sEFFwaVbxthCphS">
+          <label class="toggle" data-page-node-id="3Gmn212jlYDlod6wM7fOZT"><input type="checkbox" id="freshmanOnly" data-page-node-id="uUd1jcOsidmXQGa2fl0rfU"> 新生友好</label>
+          <label class="toggle" data-page-node-id="FADYAsqAjHr1xDm2172Kse"><input type="checkbox" id="openOnly" data-page-node-id="jmI2YIKPYQR6UUSMb9LMDK"> 只看可参与</label>
+          <label class="toggle" data-page-node-id="5C739YJwzlJ6vCtBxovEKS"><input type="checkbox" id="hideRisky" data-page-node-id="sTsMvlLF532dFOujZfXU3s"> 隐藏风险信息</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="result-meta" id="resultMeta" data-page-node-id="x8bnJtDar3YFu2JCJ5JDYd"></div>
+    <div class="card-grid" id="cardGrid" data-page-node-id="4XUMlObYBf8oWf7sBVy2Gz"></div>
+    <div class="empty-state" id="emptyState" hidden data-page-node-id="UZIJffpV6SZTamN6iENQ38">
+      <div class="empty-icon" data-page-node-id="1bskJbE1Vav5ZiCI3XZFqN">🔍</div>
+      <p data-page-node-id="5C0nCN54Ky5g4qHqNVKIHa">没有符合条件的信息，试试放宽筛选条件</p>
+    </div>
+  </main>
+
+  <!-- 收藏抽屉 -->
+  <div class="drawer-mask" id="favMask" hidden data-page-node-id="T6la1KPUoI2LugkiTAAY0H"></div>
+  <aside class="drawer" id="favDrawer" hidden data-page-node-id="FHF9U3sC14jLkQBD9Pi3uZ">
+    <div class="drawer-head" data-page-node-id="3DmpSQQ1RQs4UdHTb61xCd">
+      <h2 data-page-node-id="ib8VWPCUUL3S8X2vfDRx3o">⭐ 我的收藏</h2>
+      <div class="drawer-actions" data-page-node-id="JPKGC3bpzOueeefBQAm36x">
+        <button class="btn btn-ghost" id="favClose" data-page-node-id="qW0sTVIii1IJl7pOB3IrER">关闭</button>
+      </div>
+    </div>
+    <p class="drawer-tip" data-page-node-id="KEzj4NI8l6x92sxsOon4xi">收藏保存在本机浏览器，刷新不丢失。</p>
+    <div id="favList" class="fav-list" data-page-node-id="NjJAwg1GHgPSObnFmJPOqp"></div>
+  </aside>
+
+  <!-- 详情弹窗 -->
+  <div class="modal-mask" id="detailMask" hidden data-page-node-id="gWYHgqL8vvfqoTQW8ryiw9">
+    <div class="modal" role="dialog" aria-modal="true" data-page-node-id="ug0laQUV5Ap0NHjXZK86PU">
+      <button class="modal-close" id="detailClose" data-page-node-id="TvHksoNq7tsht60x6M2rr8">×</button>
+      <div id="detailBody" data-page-node-id="UbpqPozwIaBLtXkyOZ2gVs"></div>
+    </div>
+  </div>
+
+  <!-- 发布弹窗 -->
+  <div class="modal-mask" id="publishMask" hidden data-page-node-id="LLH2qYHHWL7U6nXMnbG1vI">
+    <div class="modal" role="dialog" aria-modal="true" data-page-node-id="2ikbCMf3mrS4QtlihvV5qW">
+      <button class="modal-close" id="publishClose" data-page-node-id="K0xIK5k5iPw6oGmWB1ter3">×</button>
+      <h2 class="modal-title" data-page-node-id="3TZLfjnjcb0VDNj8kP5Bgx">发布活动 / 招募信息</h2>
+      <p class="modal-tip" data-page-node-id="D3ZRjyBF5m5Wz57CrhJtBO">发布后将进入活动列表并标记为「学生发布 · 待核实」，公开内容请勿包含联系方式以外的私人敏感信息，严禁账号密码、身份证号等。</p>
+      <form id="publishForm" class="publish-form" data-page-node-id="J3Xn0b63sPCwtLBjhBpxN4">
+        <label data-page-node-id="WPktPuP0YCXaBtXyc0ahqf">标题 <input name="title" required maxlength="40" placeholder="例如：周末图书馆自习搭子" data-page-node-id="3akRNg5MV45WEeXEzB97SP"></label>
+        <label data-page-node-id="AL5FgdjSrKDjEWLY33OMNG">类型
+          <select name="type" data-page-node-id="77HnHryMLGtvxy2txXdDHb">
+            <option data-page-node-id="CntdZpwUs2py3Nu3GdlR6y">学生发起</option><option data-page-node-id="y3OaR9HaLeoSf7YZdDO1eC">学习成长</option><option data-page-node-id="sF6PKXz8mblDEa3cNCC3OF">校园活动</option><option data-page-node-id="7H0khRUZ0jgAo6UGsCKuE5">招募</option><option data-page-node-id="jDmAAOnQqfBQd8qp4QLj6V">志愿服务</option>
+          </select>
+        </label>
+        <label data-page-node-id="vDpFnZnaLXOvcew1uCSmd2">时间 <input name="timeText" required maxlength="40" placeholder="例如：9月21日 19:00" data-page-node-id="DG6BFMgfWosCOQqrBFJZso"></label>
+        <label data-page-node-id="dS2eaOzPudSg4xOf59ft2Y">地点 <input name="location" maxlength="40" placeholder="例如：图书馆二楼 / 待定" data-page-node-id="mxk8k7pK8HzsGFRz7ZREYz"></label>
+        <label data-page-node-id="nR2RCKVjGXkvNBRbJkRrjz">面向对象 <input name="audience" maxlength="40" placeholder="例如：面向全校学生 / 零基础欢迎" data-page-node-id="lzO3qntApd4TQ3E8t6Qiq9"></label>
+        <label data-page-node-id="9dAkogPne8IXUqfqQp38tf">详细介绍 <textarea name="desc" required rows="4" maxlength="300" placeholder="活动内容、报名方式、注意事项…"></textarea></label>
+        <button type="submit" class="btn btn-primary btn-block" data-page-node-id="HoiJ8jqzwnNOx6XQhOsexw">提交发布</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" hidden data-page-node-id="orFbjweSLUky2gf79GLywt"></div>
+
+  <footer class="site-footer" data-page-node-id="hOoMdMGAlz1QA69sThkv54">
+    <p data-page-node-id="zvxBN69Zm8ypYgQoPLPW2e">校园机会雷达 · 计算机协会软件部 2026 秋季纳新第二轮考核作品 · 数据为考核模拟信息，不代表学校真实通知</p>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
